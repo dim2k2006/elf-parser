@@ -4,7 +4,7 @@
     "manifest_version": 2,
     "content_scripts": [{
         "js": ["contentscript.js"],
-        "matches": ["https://supply.elfmoney.ru/*"]
+        "matches": ["http://supply.wowgold.ru/*"]
     }],
     "web_accessible_resources": [
 		"script.js",
