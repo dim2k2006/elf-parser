@@ -4,14 +4,14 @@ $(document).ready(function(){
 		'Король-лич - Орда':'server',
 		'Гром - Альянс':'server',
 		'Вечная Песня - Орда':'server',
-	}
+	};
 	
 	var orderlimit = 116720; //Лимит старых заказов
 	
 	
 	
 	/***REQUIRED VARIABLES***/
-	var eH
+	var eH;
 	var stop = false;
 	var delay = 2; //in seconds
 	/***REQUIRED VARIABLES***/
@@ -50,7 +50,7 @@ $(document).ready(function(){
 			$('#stop').trigger( "click" );
 			logwrite('Attention! Order on your server!', true);
 			alert('Attention! Order on your server!');
-			break
+			break;
 		}
 	}
 	
@@ -70,7 +70,7 @@ $(document).ready(function(){
 					var orderid = parseInt($('.table tbody tr:eq('+i+') td:eq( 7 ) a').attr('href').replace('/new/lock/','').replace('/',''));
 					if(orderid > orderlimit){
 						var href = $('.table tbody tr:eq('+i+') td:eq( 7 ) a').attr('href');
-						window.location.replace("https://supply.elfmoney.ru"+href);
+						window.location.replace("http://supply.wowgold.ru"+href);
 					}	
 				}
 				n++;
@@ -86,7 +86,7 @@ $(document).ready(function(){
 				i++;
 				if(i == delay){
 					window.clearInterval(timer);
-					window.location.replace("https://supply.elfmoney.ru/");
+					window.location.replace("http://supply.wowgold.ru/");
 				}
 			}else{
 				window.clearInterval(timer);
